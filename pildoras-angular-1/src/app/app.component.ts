@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pildoras-angular-1';
+  saludo = "Hola alumnos de Angular. Que tal estáis"
 }
