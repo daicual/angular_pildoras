@@ -18,11 +18,20 @@ export class EmpleadoComponent {
   }
 */
 
-  habilitacionCuadro=true;
+  habilitacionCuadro=false;
   usuRegistrado=false;
+  textoDeRegistro="No hay nadie registrado"
 
 getRegistroUsuario(){
-  this.usuRegistrado=true;
+  this.usuRegistrado=false;
+}
+
+setUsuarioRegistrado(event:Event){
+  if((<HTMLInputElement>event.target).value=="si"){
+    this.textoDeRegistro="El usuario se acaba de registrar";
+  } else {
+    this.textoDeRegistro="No hay nadie registrado";
+  }
 }
 
 }
