@@ -7,6 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AlumnoComponent {
   nombre="Darío";
-  apodo="";
+  apodo="Sin apodo";
   bilingue = true;
+
+  cambiarApodo(event:Event){
+    this.apodo = (<HTMLInputElement>event.target).value;
+  }
 }

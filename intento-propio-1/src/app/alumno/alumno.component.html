@@ -1,3 +1,4 @@
 <p>Nombre: {{nombre}}</p>
 <p>Apodo: {{apodo}}</p>
-<p>Bilingue: {{bilingue}}</p>
+<p>Cambiar apodo: <input type="text" name="apodo" id="txtApodo" (input)="cambiarApodo($event)"></p>
+<p>Bilingue: {{bilingue}}<input type="checkbox" name="bilingue" id="ckbBilingue" [(ngModel)]="bilingue"></p>
