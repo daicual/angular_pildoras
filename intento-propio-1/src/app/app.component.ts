@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'intento-propio-1';
+  nombreInstituto ="I.E.S. Bernardino de Escalante";
 }
