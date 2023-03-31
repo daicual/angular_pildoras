@@ -11,7 +11,7 @@ export class EmpleadoComponent {
   nombre ="Juan";
   apellido="Diaz";
   edad=18;
-  //empresa="Pildoras informaticas";
+  empresa="Google";
 /** 
   getEdad(){
     return this.edad;
@@ -33,5 +33,7 @@ setUsuarioRegistrado(event:Event){
     this.textoDeRegistro="No hay nadie registrado";
   }
 }
+
+
 
 }
