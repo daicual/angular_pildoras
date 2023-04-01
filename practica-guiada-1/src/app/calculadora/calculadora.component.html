@@ -1,14 +1,19 @@
 <h1 style="text-align: center;">Calculadora</h1>
 
-<p>Primer operando: <input type="number" [(ngModel)]="primerOperando"></p>
-<p>Segundo operando: <input type="number" [(ngModel)]="segundoOperando" (input)="permitirDivision($event)"></p>
+<div class="container">
 
-<p>
-    <input type="button" value="+" (click)="sumaOperandos()">
-    <input type="button" value="-" (click)="restaOperandos()">
-    <input type="button" value="*" (click)="multiplicaOperandos()">
-    <input type="button" value="/" (click)="divideOperandos()" [disabled]="divisionProhibida">
+        <p>Primer operando: <input type="number" [(ngModel)]="primerOperando"></p>
+        <p>Segundo operando: <input type="number" [(ngModel)]="segundoOperando" (input)="permitirDivision($event)"></p>
 
-</p>
+        <p>
+            <input type="button" value="+" (click)="sumaOperandos()" class="btn btn-primary">
+            <input type="button" value="-" (click)="restaOperandos()"class="btn btn-primary">
+            <input type="button" value="*" (click)="multiplicaOperandos()"class="btn btn-primary">
+            <input type="button" value="/" (click)="divideOperandos()" [disabled]="divisionProhibida" class="btn btn-primary">
 
-<p>Resultado: {{resultado}}</p>
+        </p>
+
+        
+    <p>Resultado: {{resultado}}</p>
+
+</div>
