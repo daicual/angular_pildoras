@@ -6,4 +6,14 @@
 </form>
 
 <br>
-<p *ngIf="registrado">{{mensaje}}</p>
+<p *ngIf="registrado else sinRegistrar">{{mensaje}}</p>
+
+<ng-template #sinRegistrar>
+  <p>Nadie registrado</p>
+</ng-template>
+
+<br>
+
+<ul>
+  <li *ngFor="let entrada of entradas; let i=index"><span style="font-size: larger; font-weight: bold;">{{entrada.titulo}}</span> . Entrada {{i+1}}</li>
+</ul>
