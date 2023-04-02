@@ -7,10 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   titulo = 'Registro de usuarios';
-  mensaje = '';
+  mensaje = 'Usuario registrado con exito';
   registrado=false;
   nombre ="";
   apellido ="";
+  cargo:string="";
   entradas:Array<{titulo:string}>;
 
   constructor(){
@@ -26,6 +27,6 @@ export class AppComponent {
 
   registrarUsuario(){
     this.registrado = true;
-    this.mensaje = "Usuario registrado con exito con el nombre de "+this.nombre+" "+this.apellido;
+    //this.mensaje = "Usuario registrado con exito con el nombre de "+this.nombre+" "+this.apellido+" y tiene el cargo de " +this.cargo;
   }
 }
