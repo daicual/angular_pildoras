@@ -5,5 +5,15 @@
         {{i+1}} {{empleado.nombre}} {{empleado.apellido}} {{empleado.cargo}} {{empleado.salario}}
       </div>
     </div>
+    <div class="col">
+      <h3>Registro de nuevo empleado:</h3>
+      <form>
+        <p>Nombre: <input type="text" name="nuevoEmpleado.nombre" id="nombre" [(ngModel)]="nuevoNombre"></p>
+        <p>Apellido: <input type="text" name="apellido" id="apellido" [(ngModel)]="nuevoApellido"></p>
+        <p>Cargo: <input type="text" name="cargo" id="cargo" [(ngModel)]="nuevoCargo"></p>
+        <p>Salario: <input type="text" name="salario" id="salario" [(ngModel)]="nuevoSalario"></p>
+        <input type="button" value="Registrar" (click)="registrarEmpleado()">
+      </form>
+    </div>
   </div>
 </div>

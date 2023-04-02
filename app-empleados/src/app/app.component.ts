@@ -18,6 +18,15 @@ export class AppComponent {
 
 
   ];
+  nuevoNombre ="";
+  nuevoApellido ="";
+  nuevoCargo ="";
+  nuevoSalario =0;
+
+  registrarEmpleado(){
+    this.empleados.push(new Empleado(this.nuevoNombre,this.nuevoApellido,this.nuevoCargo,this.nuevoSalario))
+  }
+
 
 
 
